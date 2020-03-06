@@ -21,8 +21,15 @@ You can run the app with: 'npm run start'
 │   └── index.html # DO NOT MODIFY
 └── src
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
+    ├── App.js # This is the root of your app. Contains all the state and rooting for the app
+    ├── list-books.js # This contains the html and components for the main bookshelf page
+    ├── bookshelf.js # Holds the html and the components for the bookshelves
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── book.js # Holds the html and the components for the books
+    ├── bookshelf-changer.js # Holds the html and logic for dropdown for selecting the shelf
+    ├── searchBooks.js # Holds the html, logic and state for the search page
+    ├── search-input.js # Holds the html, logic and state for the search bar on the search page
+    ├── search-results.js # Holds the html, logic for displaying the results of the search
     ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
     ├── icons # Helpful images for your app. Use at your discretion.
     │   ├── add.svg
@@ -31,8 +38,6 @@ You can run the app with: 'npm run start'
     ├── index.css # Global styles. You probably won't need to change anything here.
     └── index.js # You should not need to modify this file. It is used for DOM rendering only.
 ```
-
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
 ## Backend Server
 
