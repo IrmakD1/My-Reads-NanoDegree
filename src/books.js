@@ -4,7 +4,7 @@ import BookshelfChanger from './bookshelf-changer'
 
 class Books extends React.Component {
     render() {
-        const { book, changeShelf } = this.props
+        const { book, changeShelf, mainPageBooks, bookshelfNames } = this.props
       
         const checkBookCover = (book) => {
           if (book.imageLinks) return book.imageLinks.thumbnail
@@ -32,7 +32,9 @@ class Books extends React.Component {
                     >
                     <BookshelfChanger 
                         book={book}
-                        changeShelf={changeShelf}    
+                        changeShelf={changeShelf}  
+                        mainPageBooks={mainPageBooks}
+                        bookshelfNames={bookshelfNames}  
                     />   
                     </div>
                 </div>

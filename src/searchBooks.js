@@ -28,6 +28,7 @@ class SearchBooks extends React.Component {
     }
 
     render() {
+      const { changeShelf, mainPageBooks } = this.props
       return(
         <div className="search-books">
           <div className="search-books-bar">
@@ -38,7 +39,8 @@ class SearchBooks extends React.Component {
           </div>
           <SearchResults 
             books={this.state.searchedBooks}
-            changeShelf={this.props.changeShelf}
+            changeShelf={changeShelf}
+            mainPageBooks={mainPageBooks}
             />
         </div>
       )

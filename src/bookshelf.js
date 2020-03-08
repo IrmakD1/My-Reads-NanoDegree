@@ -4,11 +4,10 @@ import Books from './books'
 class Bookshelf extends React.Component {
     checkBooksOnShelf = (shelfId, books) => {
       return books.filter(book => book.shelf === shelfId)
-  
-      }
-  
+    }
+
     render() {
-      const { shelfName, shelfId, books, changeShelf } = this.props
+      const { shelfName, shelfId, books, changeShelf, bookshelfNames } = this.props
       const booksOnShelf = this.checkBooksOnShelf(shelfId, books)
       return(
         <div className="bookshelf">
@@ -20,8 +19,9 @@ class Bookshelf extends React.Component {
             {booksOnShelf.map(book => (
             <Books 
                 book={book}
-                key={book.industryIdentifiers[0].identifier}
+                key={`${book.id}1`}
                 changeShelf={changeShelf}
+                bookshelfNames={bookshelfNames}
             />
             ))}
            </ol>

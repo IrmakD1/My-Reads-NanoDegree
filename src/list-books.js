@@ -8,7 +8,6 @@ import Bookshelf from './bookshelf'
       {name: 'Want to Read', id: 'wantToRead'},
       {name: 'Read', id: 'read'}
     ]
-  
     
     render() {
       const { books, changeShelf } = this.props
